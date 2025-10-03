@@ -1,0 +1,77 @@
+.menu {
+  position: fixed;
+  inset-inline: 0;
+  top: 24px;
+  display: grid;
+  place-items: center;
+  z-index: 1000;
+}
+
+.menu__pill {
+  display: flex;
+  align-items: center;
+  gap: var(--space-6);
+  padding: 10px 10px;
+  padding-left: 24px;
+  background: rgba(255, 255, 255, 0.7);
+  -webkit-backdrop-filter: blur(var(--blur-amount));
+  backdrop-filter: blur(var(--blur-amount));
+  border: none;
+  border-radius: var(--radius-pill);
+  box-shadow: 0 0 40px rgba(0, 0, 0, 0.08);
+  width: min(var(--container-max), calc(100% - 48px));
+  justify-content: space-between;
+}
+
+.menu__logo { margin-left: 0; }
+.menu__logo .logo-img { height: 28px; width: auto; display: block; }
+
+.menu__nav { margin-inline: calc(var(--space-10) * 1.3); }
+
+.menu__nav ul {
+  display: flex;
+  gap: var(--space-4);
+}
+.menu__nav a {
+  padding: 10px 12px;
+  border-radius: var(--radius-pill);
+  color: #111;
+  font-weight: 400;
+  font-size: 14px;
+  opacity: 0.9;
+  transition: color .2s ease, background-color .2s ease;
+}
+.menu__nav a:hover {
+  background: transparent;
+  color: #b3e881;
+}
+
+.menu__cta { margin-right: 0; }
+
+.menu__nav a[aria-current="page"] {
+  color: #b3e881;
+}
+
+.menu__pill .btn {
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.menu__cta .btn {
+  background: #b3e881;
+  color: #111;
+  border-color: #b3e881;
+}
+
+.menu__cta .btn:hover {
+  background: #111;
+  color: #fff;
+  border-color: #111;
+}
+
+/* Disable lift/shadow hover effect for the menu button only */
+.menu__pill .btn:hover {
+  transform: none;
+  box-shadow: none;
+  will-change: auto;
+}

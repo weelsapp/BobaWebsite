@@ -1,0 +1,184 @@
+<![CDATA[<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Boba Network — Website Test</title>
+  <meta name="description" content="Boba Network — premium landing skeleton">
+  <!-- Styles (blocks + core) -->
+  <link rel="preload" as="style" href="core/styles/tokens.css">
+  <link rel="stylesheet" href="core/styles/tokens.css">
+  <link rel="stylesheet" href="core/styles/fonts.css">
+  <link rel="stylesheet" href="core/styles/globals.css">
+  <link rel="stylesheet" href="blocks/menu/menu.css">
+  <link rel="stylesheet" href="blocks/hero/hero.css">
+  <link rel="stylesheet" href="blocks/stats/stats.css">
+  <link rel="stylesheet" href="blocks/feature/feature.css">
+</head>
+<body>
+  <!-- Block: Floating Menu -->
+  <nav class="menu" data-block="menu" aria-label="Primary">
+    <div class="menu__pill" role="group" aria-label="Main navigation">
+      <div class="menu__logo" aria-label="Boba Network">
+        <img class="logo-img" src="assets/logos/boba-brandmark.svg" alt="Boba Network logo">
+      </div>
+      <div class="menu__nav">
+        <ul>
+          <li><a href="#" aria-current="page">Home</a></li>
+          <li><a href="#">Ecosystem</a></li>
+          <li><a href="#">HybridCompute</a></li>
+          <li><a href="#">Accelerators</a></li>
+          <li><a href="#">Developers</a></li>
+          <li><a href="#">Users</a></li>
+        </ul>
+      </div>
+      <div class="menu__cta">
+        <a class="btn btn--pill btn--black" href="#">Get Started</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Block: Hero -->
+  <main>
+    <section class="hero" data-block="hero" aria-label="Hero">
+      <div class="hero__container">
+        <div class="hero__content">
+        <h1 class="hero__title">
+          The Only Ethereum Layer 2 powered by <span class="highlight">Hybrid<span class="highlight--green">Compute</span><span class="tm">™</span></span>
+        </h1>
+        <p class="hero__subtitle">
+          For visionary developers, Boba Network is the only hybrid blockchain that delivers off-chain data and compute, enabling smarter applications for mass adoption.
+        </p>
+        <div class="hero__actions">
+          <a class="btn btn--pill btn--accent" href="#">Build on Boba</a>
+          <a class="btn btn--pill btn--black" href="#">Use Boba</a>
+        </div>
+        <div class="hero__banner">
+          <img src="assets/images/website-cover-week-sept-8.png" alt="Boba Network weekly cover" loading="lazy" decoding="async">
+        </div>
+      </div>
+        <div class="hero__media" aria-hidden="true">
+        <video
+          class="hero__video"
+          src="assets/video/hero/videowebsite.mp4"
+          autoplay
+          muted
+          loop
+          playsinline
+          preload="auto"
+        ></video>
+      </div>
+      </div>
+    </section>
+
+    <!-- Block: Stats -->
+    <section id="stats" class="stats" data-block="stats" aria-label="Network stats">
+      <div class="stats__container">
+        <div class="stats__row">
+          <div class="stat">
+            <div class="stat__value" data-target="67.45" data-suffix="M" data-decimals="2">0</div>
+            <div class="stat__label">Total<br>Transactions</div>
+          </div>
+          <div class="stat">
+            <div class="stat__value" data-target="176.72" data-suffix="K" data-decimals="2">0</div>
+            <div class="stat__label">Cumulative<br>Unique Addresses</div>
+          </div>
+          <div class="stat">
+            <div class="stat__value" data-target="8.79" data-suffix="K" data-decimals="2">0</div>
+            <div class="stat__label">Deployed<br>Smart Contracts</div>
+          </div>
+          <div class="stat">
+            <div class="stat__value" data-target="67.45" data-suffix="K" data-decimals="2">0</div>
+            <div class="stat__label">Weekly<br>Transactions</div>
+          </div>
+          <div class="stat">
+            <div class="stat__value" data-target="42.42" data-suffix="M" data-decimals="2">0</div>
+            <div class="stat__label">Weekly Token<br>Trading Volume</div>
+          </div>
+        </div>
+
+        <div class="stats__actions">
+          <a class="btn btn--pill btn--accent" href="#">Analytics</a>
+          <a class="btn btn--pill btn--black" href="#">Explorer</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Block: Feature (Optimistic Rollups) -->
+    <section class="feature" data-block="feature" aria-label="Scaling Ethereum">
+      <div class="feature__container">
+        <div class="feature__grid">
+          <div class="feature__media" aria-hidden="true">
+            <video
+              class="feature__media-video"
+              src="assets/video/feature/liquid.mp4"
+              autoplay
+              muted
+              loop
+              playsinline
+              preload="auto"
+            ></video>
+          </div>
+          <div class="feature__content">
+            <h2 class="feature__title">Scaling Ethereum with Optimistic Rollups</h2>
+            <p class="feature__text">
+              Boba Network is an Optimistic Rollup built on Ethereum, designed to make transactions faster and cheaper while inheriting Ethereum’s security and decentralization.
+            </p>
+
+            <div class="feature__cards">
+              <div class="feature__card">
+                <video
+                  class="card__video"
+                  src="assets/video/feature/security.mp4"
+                  autoplay
+                  muted
+                  loop
+                  playsinline
+                  preload="auto"
+                ></video>
+                <div class="card__title">Ethereum Security</div>
+              </div>
+              <div class="feature__card">
+                <video
+                  class="card__video"
+                  src="assets/video/feature/evm.mp4"
+                  autoplay
+                  muted
+                  loop
+                  playsinline
+                  preload="auto"
+                ></video>
+                <div class="card__title">Full EVM Compatibility</div>
+              </div>
+              <div class="feature__card">
+                <video
+                  class="card__video"
+                  src="assets/video/feature/optimistic.mp4"
+                  autoplay
+                  muted
+                  loop
+                  playsinline
+                  preload="auto"
+                ></video>
+                <div class="card__title">Optimistic Rollup Technology</div>
+              </div>
+            </div>
+
+            <div class="feature__actions">
+              <a class="btn btn--pill btn--accent" href="#">Use Boba</a>
+              <a class="btn btn--pill btn--black" href="#">Ecosystem</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Scripts (placeholders for now) -->
+  <script src="main.js" defer></script>
+  <script src="blocks/menu/menu.js" defer></script>
+  <script src="blocks/hero/hero.js" defer></script>
+  <script src="blocks/stats/stats.js" defer></script>
+  <script src="blocks/feature/feature.js" defer></script>
+</body>
+</html>]]>
