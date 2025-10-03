@@ -73,7 +73,7 @@
   align-items: center;
 }
 
-.hero__media { position: relative; z-index: 1; pointer-events: none; height: 65vh; overflow: visible; justify-self: end; }
+.hero__media { position: relative; z-index: 1; pointer-events: none; height: 65vh; overflow: visible; justify-self: end; contain: paint; }
 
 .hero__media .media-placeholder {
   aspect-ratio: 16 / 10;
@@ -115,6 +115,7 @@
   z-index: 1;
   transform: translateX(40%) scale(1.6); /* move further right */
   transform-origin: center right;       /* keep anchoring on the right */
+  backface-visibility: hidden;          /* keep on a compositor layer */
   will-change: transform;
   pointer-events: none;
 }

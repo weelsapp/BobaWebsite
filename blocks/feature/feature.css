@@ -2,6 +2,8 @@
 .feature {
   background: #ffffff;
   padding: var(--space-20) 0;
+  content-visibility: auto;
+  contain-intrinsic-size: 900px; /* estimated block height for smooth early layout */
 }
 
 .feature__container {
@@ -14,11 +16,13 @@
   grid-template-columns: 1fr 1fr;
   gap: var(--space-12);
   align-items: center;
+  contain: layout paint; /* isolate work inside the grid during scroll */
 }
 
 /* Left media placeholder */
 .feature__media {
   order: 1;
+  contain: paint; /* prevent repaint bleed during scroll */
 }
 .feature__media-placeholder {
   width: 100%;
@@ -68,6 +72,7 @@
   display: grid;
   place-items: center;
   gap: var(--space-4);
+  will-change: transform, opacity; /* keep animations on a stable layer */
   min-height: 140px;
 }
 
